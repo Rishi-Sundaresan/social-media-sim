@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.0/css/bootstrap-slider.min.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.0/bootstrap-slider.min.js"></script>
+    <link rel='stylesheet' href='style.css'/>
+    <title>Social Media Sim</title>
+  </head>
+  <body>
+    <div class='big-grid'> 
+      <div class='sim-world-container' id='sim-world-container'>
+        <div class='sim-world' id='sim-world'>
+        </div>
+        <div class='run-sim-container', id='run-sim-container'>
+          <div class='run-sim btn btn-primary' id='run-sim'> Run Sim</div>
+        </div>
+      </div>
+      
+      <div class='parameters' id='parameters'>
+        <div class='environment-type'>
+          <label> Select Environment Type</label>
+          <select class="environment-selection" id="environment">
+            <option>Social Media with Content Personalization</option>
+            <option>Social Media with No Content Personalization</option>
+            <option>Pre-Social Media</option>
+          </select>
+          <div class='stance'>
+            <div> Average Stance: <span class='stance-val' id='stance-avg'></span> </div>
+            <div> Stance Variance: <span class='stance-val' id='stance-var'></span> </div>
+            <div> Num. Moderates: <span class='stance-val' id='stance-mid'></span> </div>
+          </div>
+        </div>
+        <div class='sliders'>
+          <span class='slider-name' id="slider-name">Population Size</span> 
+          <div class='slider-range'>
+            <span class='slider-val' id="slider-val">100</span> <input id="population-size" data-slider-id='population-sizeSlider' type="text" data-slider-min="100" data-slider-max="1000" data-slider-step="10" data-slider-value="500"/> <span class='slider-val' id="slider-val">1000</span>
+          </div>
+          <span class='slider-name' id="slider-name">Personalization</span> 
+          <div class='slider-range'>
+            <span class='slider-val' id="slider-val">0</span> <input id="personalization" data-slider-id='personalizationSlider' type="text" data-slider-min="0.00" data-slider-max="1.00" data-slider-step="0.01" data-slider-value="0.50"/> <span class='slider-val' id="slider-val">1</span>
+          </div>
+          <span class='slider-name' id="slider-name">Effectiveness</span>
+          <div class='slider-range'>
+              <span class='slider-val' id="slider-val">0</span>
+               <input id="effectiveness" data-slider-id='effectivenessSlider' type="text" data-slider-min="0.00" data-slider-max="1.00" data-slider-step="0.01" data-slider-value="0.50"/> 
+               <span class='slider-val' id="slider-val">1</span>
+          </div>
+          <span class='slider-name' id="slider-name">Activity</span> 
+          <div class='slider-range'>
+              <span class='slider-val' id="slider-val">0</span>
+              <input id="activity" data-slider-id='activitySlider' type="text" data-slider-min="0.00" data-slider-max="1.00" data-slider-step="0.01" data-slider-value="0.70"/> 
+              <span class='slider-val' id="slider-val">1</span>
+          </div>
+          <span class='slider-name' id="slider-name">Simulation Time (s)</span> 
+          <div class='slider-range'>
+              <span class='slider-val' id="slider-val">0</span>
+              <input id="sim-time" data-slider-id='sim-timeSlider' type="text" data-slider-min="0" data-slider-max="120" data-slider-step="1" data-slider-value="30"/> 
+              <span class='slider-val' id="slider-val">120</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
