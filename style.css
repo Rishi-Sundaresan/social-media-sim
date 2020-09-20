@@ -1,0 +1,66 @@
+body {
+	background: #CCCCCC;
+}
+
+.big-grid {
+	display: grid;
+	grid-template-columns: 60vw 40vw;
+}
+.sim-world-container {
+	display: grid;
+	grid-template-rows: 85vh, 10vh
+}
+.sim-world {
+	height: 75vmin;
+	width: 75vmin;
+	border: 1px solid black;
+	margin: 10%;
+	margin-bottom: 3%;
+	position: relative;
+}
+.run-sim {
+	background: green;
+	border: 1px solid green;
+}
+.run-sim-container {
+	text-align: center
+}
+.parameters {
+	display: grid;
+	grid-template-rows: 40vh 50vh;
+}
+.sliders {
+	display: grid;
+	grid-template-columns: 30% 70%;
+	grid-template-rows: repeat(1fr, 5);
+	margin-left: 5%;
+}
+.slider-name {
+	font-weight: bold;
+}
+
+.slider-val {
+	margin-left: 2%;
+	margin-right: 2%;
+}
+
+.environment-type {
+	margin-left: 5%;
+	margin-top: 20%;
+}
+
+.dot {
+  position: absolute;
+  left: 400.22px;
+  top: 10px;
+  height: 10px;
+  width: 10px;
+  background-color: green;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.stance {
+	margin-top: 10%;
+}
+
